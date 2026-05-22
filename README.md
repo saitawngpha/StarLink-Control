@@ -4,6 +4,12 @@ Starlink Control is a SwiftUI iOS app for monitoring and controlling a Starlink 
 
 The app is built with MVVM, a polished gradient dashboard, local gRPC calls generated from [`Eitol/starlink-client`](https://github.com/Eitol/starlink-client), and a side menu for remote account authentication.
 
+## Demo
+   Screen 1 | Screen 2
+:-------------------------: | :-------------------------:
+<img src="src/1.PNG" width="300px"> | <img src="src/2.PNG" width="300px"> 
+<img src="src/3.PNG" width="300px"> | <img src="src/4.PNG" width="300px"> 
+
 ## Features
 
 - Local Starlink dish connection at `192.168.100.1:9200`
