@@ -52,7 +52,7 @@ The app follows MVVM:
 
 ## Requirements
 
-- Xcode 17 or newer
+- Xcode 16 or newer
 - iOS 17 or newer
 - SwiftUI
 - Swift Package Manager dependencies:
