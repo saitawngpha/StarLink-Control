@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08AF38395C4002835B22FF01 /* ut_disablement_codes.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43444A408D4B01028C1EA9E4 /* ut_disablement_codes.pb.swift */; };
+		08D62856707082E2DF9268B4 /* wifi.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DDC17E1A9B6667B724998B /* wifi.pb.swift */; };
+		0AE7A959C894C70D3D09AF81 /* wifi_config.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ED1AEC513C4805483391E4 /* wifi_config.pb.swift */; };
+		29591F3ADC569C639367B00E /* transceiver.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A8591A65688897F1AD130 /* transceiver.pb.swift */; };
+		30F79DC677467041EC4D0494 /* wrappers.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184FE4FB7369AE52972F576E /* wrappers.pb.swift */; };
+		4304216815C23659699149EE /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = FDABED4DFF04A9E3B864D3B6 /* SwiftProtobuf */; };
+		4376C5479B4BE1A48EFCD5E2 /* time.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A015B8E0DDB35612F7125684 /* time.pb.swift */; };
+		45106433953078E77AA51D54 /* rssi_scan.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20D53B3016A0A86A2F929CF /* rssi_scan.pb.swift */; };
+		4DA5935E6F75512A652323F2 /* dish.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECA2BBDB64E2B4C990E70E4 /* dish.pb.swift */; };
+		501C2968D1818357B55D0758 /* wifi_util.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B535A73E53A9A73259C396 /* wifi_util.pb.swift */; };
+		50E6407B307B1DA3469E5FE6 /* timestamp.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE5D90D45B19F811B8D466 /* timestamp.pb.swift */; };
+		5C1D2C725423987D5A196B74 /* device.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55488CB15BEF918CE38C42AA /* device.grpc.swift */; };
+		628CDFB4552B1EC52854C277 /* dish_config.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225F0B6C71832B4DD907F51 /* dish_config.pb.swift */; };
+		6E326B46540431CED51180DF /* wifi.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0A411BC8C955377E5A21B /* wifi.grpc.swift */; };
+		829AE2D5752FA1C51163DEAF /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 0175523D1AD0292580304A97 /* NIO */; };
+		8A514B799BDCC15CCA050302 /* NIOConcurrencyHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = B27F2B38A44EA2DA5E858A68 /* NIOConcurrencyHelpers */; };
+		8F63F4CDF15DEFDBFB1C1770 /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = DED6360185E95B6449D99E55 /* GRPC */; };
+		905F95972ADEEBA9996B7F7C /* device.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600EB4046A19FACE703E9805 /* device.pb.swift */; };
+		97D83FAE25C1F2241A08E6B2 /* service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11FB786AF05BB7D03F06B97 /* service.grpc.swift */; };
+		A10000000000000000000001 /* StarlinkControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* StarlinkControlApp.swift */; };
+		A10000000000000000000002 /* StarlinkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* StarlinkModels.swift */; };
+		A10000000000000000000003 /* StarlinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* StarlinkService.swift */; };
+		A10000000000000000000004 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* DashboardViewModel.swift */; };
+		A10000000000000000000005 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* DashboardView.swift */; };
+		A10000000000000000000006 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* Components.swift */; };
+		A10000000000000000000007 /* RemoteStarlinkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20000000000000000000001 /* RemoteStarlinkModels.swift */; };
+		A10000000000000000000008 /* StarlinkCookieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20000000000000000000002 /* StarlinkCookieStore.swift */; };
+		A10000000000000000000009 /* StarlinkRemoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20000000000000000000003 /* StarlinkRemoteClient.swift */; };
+		BB02E89F0D1A0A44716AAD37 /* GeneratedStarlinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4471A40D875304001F5BB6F2 /* GeneratedStarlinkService.swift */; };
+		BC2D9D653A9F83C0C989B824 /* status.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F364B30F5E0B5757ABCA4A2 /* status.pb.swift */; };
+		D1038BF590127285262FE6C9 /* service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F769EA7437BB3B0E2F04D /* service.pb.swift */; };
+		D1A3A9A693F791B4AF93A5E5 /* command.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C78089BB1C62519CAD5438 /* command.pb.swift */; };
+		F1FA02E836D45E49B1F480E0 /* common.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2A00A943D6A3E6BC978AB8 /* common.pb.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14E0A411BC8C955377E5A21B /* wifi.grpc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wifi.grpc.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/wifi.grpc.swift"; sourceTree = "<group>"; };
+		184FE4FB7369AE52972F576E /* wrappers.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wrappers.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/google/protobuf/wrappers.pb.swift"; sourceTree = "<group>"; };
+		1F364B30F5E0B5757ABCA4A2 /* status.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = status.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/common/status/status.pb.swift"; sourceTree = "<group>"; };
+		24C78089BB1C62519CAD5438 /* command.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = command.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/command.pb.swift"; sourceTree = "<group>"; };
+		43444A408D4B01028C1EA9E4 /* ut_disablement_codes.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ut_disablement_codes.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/satellites/network/ut_disablement_codes.pb.swift"; sourceTree = "<group>"; };
+		4471A40D875304001F5BB6F2 /* GeneratedStarlinkService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GeneratedStarlinkService.swift; sourceTree = "<group>"; };
+		4F2A00A943D6A3E6BC978AB8 /* common.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = common.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/common.pb.swift"; sourceTree = "<group>"; };
+		55488CB15BEF918CE38C42AA /* device.grpc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = device.grpc.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/device.grpc.swift"; sourceTree = "<group>"; };
+		56DDC17E1A9B6667B724998B /* wifi.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wifi.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/wifi.pb.swift"; sourceTree = "<group>"; };
+		600EB4046A19FACE703E9805 /* device.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = device.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/device.pb.swift"; sourceTree = "<group>"; };
+		83ED1AEC513C4805483391E4 /* wifi_config.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wifi_config.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/wifi_config.pb.swift"; sourceTree = "<group>"; };
+		912A8591A65688897F1AD130 /* transceiver.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = transceiver.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/transceiver.pb.swift"; sourceTree = "<group>"; };
+		9ECA2BBDB64E2B4C990E70E4 /* dish.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = dish.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/dish.pb.swift"; sourceTree = "<group>"; };
+		A015B8E0DDB35612F7125684 /* time.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = time.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/telemetron/public/common/time.pb.swift"; sourceTree = "<group>"; };
+		A20000000000000000000001 /* StarlinkControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlinkControlApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* StarlinkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlinkModels.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* StarlinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlinkService.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000008 /* StarlinkControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarlinkControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE7F769EA7437BB3B0E2F04D /* service.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = service.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/services/unlock/service.pb.swift"; sourceTree = "<group>"; };
+		C20000000000000000000001 /* RemoteStarlinkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStarlinkModels.swift; sourceTree = "<group>"; };
+		C20000000000000000000002 /* StarlinkCookieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlinkCookieStore.swift; sourceTree = "<group>"; };
+		C20000000000000000000003 /* StarlinkRemoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarlinkRemoteClient.swift; sourceTree = "<group>"; };
+		D225F0B6C71832B4DD907F51 /* dish_config.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = dish_config.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/dish_config.pb.swift"; sourceTree = "<group>"; };
+		E20D53B3016A0A86A2F929CF /* rssi_scan.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = rssi_scan.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/rssi_scan.pb.swift"; sourceTree = "<group>"; };
+		E4B535A73E53A9A73259C396 /* wifi_util.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wifi_util.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/wifi_util.pb.swift"; sourceTree = "<group>"; };
+		F11FB786AF05BB7D03F06B97 /* service.grpc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = service.grpc.swift; path = "Vendor/starlink-client/libs/swift/gen/spacex/api/device/services/unlock/service.grpc.swift"; sourceTree = "<group>"; };
+		F4AE5D90D45B19F811B8D466 /* timestamp.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = timestamp.pb.swift; path = "Vendor/starlink-client/libs/swift/gen/google/protobuf/timestamp.pb.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4304216815C23659699149EE /* SwiftProtobuf in Frameworks */,
+				8F63F4CDF15DEFDBFB1C1770 /* GRPC in Frameworks */,
+				829AE2D5752FA1C51163DEAF /* NIO in Frameworks */,
+				8A514B799BDCC15CCA050302 /* NIOConcurrencyHelpers in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D80A586C0049B3B6C68B305 /* gen */ = {
+			isa = PBXGroup;
+			children = (
+				F4AE5D90D45B19F811B8D466 /* timestamp.pb.swift */,
+				184FE4FB7369AE52972F576E /* wrappers.pb.swift */,
+				1F364B30F5E0B5757ABCA4A2 /* status.pb.swift */,
+				24C78089BB1C62519CAD5438 /* command.pb.swift */,
+				4F2A00A943D6A3E6BC978AB8 /* common.pb.swift */,
+				55488CB15BEF918CE38C42AA /* device.grpc.swift */,
+				600EB4046A19FACE703E9805 /* device.pb.swift */,
+				9ECA2BBDB64E2B4C990E70E4 /* dish.pb.swift */,
+				D225F0B6C71832B4DD907F51 /* dish_config.pb.swift */,
+				E20D53B3016A0A86A2F929CF /* rssi_scan.pb.swift */,
+				F11FB786AF05BB7D03F06B97 /* service.grpc.swift */,
+				BE7F769EA7437BB3B0E2F04D /* service.pb.swift */,
+				912A8591A65688897F1AD130 /* transceiver.pb.swift */,
+				14E0A411BC8C955377E5A21B /* wifi.grpc.swift */,
+				56DDC17E1A9B6667B724998B /* wifi.pb.swift */,
+				83ED1AEC513C4805483391E4 /* wifi_config.pb.swift */,
+				E4B535A73E53A9A73259C396 /* wifi_util.pb.swift */,
+				43444A408D4B01028C1EA9E4 /* ut_disablement_codes.pb.swift */,
+				A015B8E0DDB35612F7125684 /* time.pb.swift */,
+			);
+			name = gen;
+			sourceTree = "<group>";
+		};
+		9B7381722B210BAD2ECCDF8C /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				BD3F999D5027FBFD65BC9BEF /* swift */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000002 /* StarlinkControl */,
+				A40000000000000000000008 /* Products */,
+				B4B597F0FC2C7690981D82D6 /* Vendor */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000000000000000000002 /* StarlinkControl */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* StarlinkControlApp.swift */,
+				A40000000000000000000003 /* Models */,
+				A40000000000000000000004 /* Services */,
+				A40000000000000000000005 /* ViewModels */,
+				A40000000000000000000006 /* Views */,
+				A40000000000000000000007 /* Resources */,
+			);
+			path = StarlinkControl;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000002 /* StarlinkModels.swift */,
+				C20000000000000000000001 /* RemoteStarlinkModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000003 /* StarlinkService.swift */,
+				4471A40D875304001F5BB6F2 /* GeneratedStarlinkService.swift */,
+				C20000000000000000000002 /* StarlinkCookieStore.swift */,
+				C20000000000000000000003 /* StarlinkRemoteClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000004 /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000005 /* DashboardView.swift */,
+				A20000000000000000000006 /* Components.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000007 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000007 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000008 /* StarlinkControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4B597F0FC2C7690981D82D6 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				CFF8DF04D6F367775409F525 /* starlink-client */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		BD3F999D5027FBFD65BC9BEF /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				3D80A586C0049B3B6C68B305 /* gen */,
+			);
+			name = swift;
+			sourceTree = "<group>";
+		};
+		CFF8DF04D6F367775409F525 /* starlink-client */ = {
+			isa = PBXGroup;
+			children = (
+				9B7381722B210BAD2ECCDF8C /* libs */,
+			);
+			name = "starlink-client";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* StarlinkControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90000000000000000000002 /* Build configuration list for PBXNativeTarget "StarlinkControl" */;
+			buildPhases = (
+				A60000000000000000000001 /* Sources */,
+				A30000000000000000000001 /* Frameworks */,
+				A60000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarlinkControl;
+			packageProductDependencies = (
+				FDABED4DFF04A9E3B864D3B6 /* SwiftProtobuf */,
+				DED6360185E95B6449D99E55 /* GRPC */,
+				0175523D1AD0292580304A97 /* NIO */,
+				B27F2B38A44EA2DA5E858A68 /* NIOConcurrencyHelpers */,
+			);
+			productName = StarlinkControl;
+			productReference = A20000000000000000000008 /* StarlinkControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A70000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					A50000000000000000000001 = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A90000000000000000000001 /* Build configuration list for PBXProject "StarlinkControl" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40000000000000000000001;
+			packageReferences = (
+				F9294D0C3EBA200E28C7A00B /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+				7A9064A8E19D2DA319C3200D /* XCRemoteSwiftPackageReference "grpc-swift" */,
+				226231839FD1A7E4745B50E4 /* XCRemoteSwiftPackageReference "swift-nio" */,
+			);
+			productRefGroup = A40000000000000000000008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000000000000000000001 /* StarlinkControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* StarlinkControlApp.swift in Sources */,
+				A10000000000000000000002 /* StarlinkModels.swift in Sources */,
+				A10000000000000000000003 /* StarlinkService.swift in Sources */,
+				A10000000000000000000004 /* DashboardViewModel.swift in Sources */,
+				A10000000000000000000005 /* DashboardView.swift in Sources */,
+				A10000000000000000000006 /* Components.swift in Sources */,
+				A10000000000000000000007 /* RemoteStarlinkModels.swift in Sources */,
+				A10000000000000000000008 /* StarlinkCookieStore.swift in Sources */,
+				A10000000000000000000009 /* StarlinkRemoteClient.swift in Sources */,
+				50E6407B307B1DA3469E5FE6 /* timestamp.pb.swift in Sources */,
+				30F79DC677467041EC4D0494 /* wrappers.pb.swift in Sources */,
+				BC2D9D653A9F83C0C989B824 /* status.pb.swift in Sources */,
+				D1A3A9A693F791B4AF93A5E5 /* command.pb.swift in Sources */,
+				F1FA02E836D45E49B1F480E0 /* common.pb.swift in Sources */,
+				5C1D2C725423987D5A196B74 /* device.grpc.swift in Sources */,
+				905F95972ADEEBA9996B7F7C /* device.pb.swift in Sources */,
+				4DA5935E6F75512A652323F2 /* dish.pb.swift in Sources */,
+				628CDFB4552B1EC52854C277 /* dish_config.pb.swift in Sources */,
+				45106433953078E77AA51D54 /* rssi_scan.pb.swift in Sources */,
+				97D83FAE25C1F2241A08E6B2 /* service.grpc.swift in Sources */,
+				D1038BF590127285262FE6C9 /* service.pb.swift in Sources */,
+				29591F3ADC569C639367B00E /* transceiver.pb.swift in Sources */,
+				6E326B46540431CED51180DF /* wifi.grpc.swift in Sources */,
+				08D62856707082E2DF9268B4 /* wifi.pb.swift in Sources */,
+				0AE7A959C894C70D3D09AF81 /* wifi_config.pb.swift in Sources */,
+				501C2968D1818357B55D0758 /* wifi_util.pb.swift in Sources */,
+				08AF38395C4002835B22FF01 /* ut_disablement_codes.pb.swift in Sources */,
+				4376C5479B4BE1A48EFCD5E2 /* time.pb.swift in Sources */,
+				BB02E89F0D1A0A44716AAD37 /* GeneratedStarlinkService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A80000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			};
+			name = Debug;
+		};
+		A80000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A80000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StarlinkControl/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saitawngpha.StarlinkControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A80000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StarlinkControl/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saitawngpha.StarlinkControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90000000000000000000001 /* Build configuration list for PBXProject "StarlinkControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000000000000000000001 /* Debug */,
+				A80000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90000000000000000000002 /* Build configuration list for PBXNativeTarget "StarlinkControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000000000000000000003 /* Debug */,
+				A80000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		226231839FD1A7E4745B50E4 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.76.0;
+			};
+		};
+		7A9064A8E19D2DA319C3200D /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.24.0;
+			};
+		};
+		F9294D0C3EBA200E28C7A00B /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.29.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0175523D1AD0292580304A97 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 226231839FD1A7E4745B50E4 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		B27F2B38A44EA2DA5E858A68 /* NIOConcurrencyHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 226231839FD1A7E4745B50E4 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOConcurrencyHelpers;
+		};
+		DED6360185E95B6449D99E55 /* GRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A9064A8E19D2DA319C3200D /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPC;
+		};
+		FDABED4DFF04A9E3B864D3B6 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9294D0C3EBA200E28C7A00B /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A70000000000000000000001 /* Project object */;
+}

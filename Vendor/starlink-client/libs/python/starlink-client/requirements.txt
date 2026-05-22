@@ -1,0 +1,8 @@
+grpcio
+grpcio-status
+proto-plus
+protobuf
+requests
+httpx
+pydantic
+httpx[http2]
